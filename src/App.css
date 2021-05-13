@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+.header-ctn {
+    font-family: "FontRebellion", Helvetica, Arial, sans-serif;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black);
+    height: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo-app {
+    font-family: "FontStarWars1";
+    font-size: x-large;
+    color: var(--yellow);
+    margin: 0 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.menu-ctn {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.menu-ctn li {
+    justify-content: space-around;
+    margin-right: 2rem;
+    width: auto;
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.menu-ctn a {
+    color: var(--yellow);
+    text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-ctn a:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
